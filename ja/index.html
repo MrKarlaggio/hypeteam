@@ -138,6 +138,13 @@ section{padding:90px 0}
 .tl-item li{color:var(--muted);font-size:.95rem;padding-left:20px;position:relative}
 .tl-item li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
 .badge-now{display:inline-block;font-size:.7rem;font-weight:700;color:#0b1020;background:var(--accent-2);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.track-head{display:flex;align-items:center;gap:10px;font-size:1.05rem;font-weight:800;margin-bottom:26px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.track-head .ic{font-size:1.35rem}
+.track-msp .timeline::before{background:linear-gradient(var(--accent-2),#7a5cff,transparent)}
+.track-msp .tl-item::before{border-color:var(--accent-2);box-shadow:0 0 0 4px rgba(54,194,255,.12)}
+.track-msp .tl-item li::before{color:var(--accent-2)}
+.track-msp .tl-period{color:var(--accent)}
 
 /* skills */
 .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
@@ -196,6 +203,7 @@ footer .socials a:hover svg{fill:var(--accent)}
 /* responsive */
 @media(max-width:880px){
   .about-grid,.skills-grid,.proj-grid{grid-template-columns:1fr}
+  .tracks{grid-template-columns:1fr;gap:36px}
   .cert-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:680px){
@@ -281,67 +289,86 @@ footer .socials a:hover svg{fill:var(--accent)}
     <div class="sec-head reveal">
       <span class="sec-tag">// career</span>
       <h2>職務経歴</h2>
-      <p>システムサポートから高度なサイバーセキュリティコンサルティングまで。</p>
+      <p>2つの並行するキャリア：正社員としての成長と、独立コンサルタント／MSPとしての活動。</p>
     </div>
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-period">2026年5月 — 現在</div>
-        <div class="tl-role">Offering Developer &amp; Cybersecurity Consultant（CDE-PAM）<span class="badge-now">現在</span></div>
-        <div class="tl-company">Exprivia S.p.A.</div>
-        <ul>
-          <li>サイバーセキュリティおよび特権アクセス管理分野におけるサービスオファリングの開発・策定。</li>
-          <li>CDE-PAMレベルでのCyberArk PAMのデリバリーおよびコンサルティング。</li>
-        </ul>
+    <div class="tracks">
+      <div class="track reveal">
+        <div class="track-head"><span class="ic">🏢</span> 正社員としてのキャリア</div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-period">2026年5月 — 現在</div>
+            <div class="tl-role">Offering Developer &amp; Cybersecurity Consultant（CDE-PAM）<span class="badge-now">現在</span></div>
+            <div class="tl-company">Exprivia S.p.A.</div>
+            <ul>
+              <li>サイバーセキュリティおよび特権アクセス管理分野におけるサービスオファリングの開発・策定。</li>
+              <li>CDE-PAMレベルでのCyberArk PAMのデリバリーおよびコンサルティング。</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">2025年9月 — 2026年5月</div>
+            <div class="tl-role">Cybersecurity Engineer</div>
+            <div class="tl-company">DGS — セスト・サン・ジョヴァンニ（MI）</div>
+            <ul>
+              <li>特権アカウントのセキュリティを目的としたCyberArk PAMソリューション（PVWA、CPM、PSM）の導入と運用。</li>
+              <li>セキュリティ基準に準拠したハードニングおよびコンプライアンス対応。</li>
+              <li>CyberArkのトラブルシューティングと根本原因分析。</li>
+              <li>DeliveryとAssuranceの混成チームでの調整および技術サポート。</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">2021年5月 — 2025年7月</div>
+            <div class="tl-role">Infor Systems Administrator</div>
+            <div class="tl-company">Horsa S.p.A. — ミラノ（MI）</div>
+            <ul>
+              <li>Inforの専門コンサルティングおよびデリバリー（M3、LN、LSP、Factory Track、Mobility Core、ExStream）。</li>
+              <li>Inforノード基盤の構築・運用：HyperV、Windows Server、ADFS、LDAP、SSL証明書、API、VPN、SQL、Java。</li>
+              <li>データ移行、製品アップグレード、インダストリー4.0プロジェクトのネットワークコンサルティング。</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">2019年1月 — 2021年2月</div>
+            <div class="tl-role">IT System Technician &amp; Functional Analyst</div>
+            <div class="tl-company">New Livit s.r.l. — クサーゴ（MI）</div>
+            <ul>
+              <li>システムおよびネットワーク機器の設置・保守：VPBX、VoIP、LAN、VLAN。</li>
+              <li>VMware、Microsoft 365、Exchange、QNAP/Synology NAS、バックアップ、クラスタリング、ファイアウォール、Ubiquiti UniFi、Active Directory、HA、ディザスタリカバリ、VPN。</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">2025年9月 — 2026年5月</div>
-        <div class="tl-role">Cybersecurity Engineer</div>
-        <div class="tl-company">DGS — セスト・サン・ジョヴァンニ（MI）</div>
-        <ul>
-          <li>特権アカウントのセキュリティを目的としたCyberArk PAMソリューション（PVWA、CPM、PSM）の導入と運用。</li>
-          <li>セキュリティ基準に準拠したハードニングおよびコンプライアンス対応。</li>
-          <li>CyberArkのトラブルシューティングと根本原因分析。</li>
-          <li>DeliveryとAssuranceの混成チームでの調整および技術サポート。</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">2019年9月 — 現在</div>
-        <div class="tl-role">IT Consultant — InforOS システム統合</div>
-        <div class="tl-company">Metroz Essences S.p.A. — コロニョ・モンツェーゼ（MI）</div>
-        <ul>
-          <li>Inforインフラの運用と生産プロセスの自動化（Infor OS、ION、IDM、Mingle、LX、BODs）。</li>
-          <li>Ephesoftを用いたドキュメント自動化とOCR開発。</li>
-          <li>生産システム（PLC、産業用計量器）の統合。</li>
-          <li>ネットワーク：Fortinet、VLAN、ネットワーク分離、ディザスタリカバリ、HyperV。</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">2021年5月 — 2025年7月</div>
-        <div class="tl-role">Infor Systems Administrator</div>
-        <div class="tl-company">Horsa S.p.A. — ミラノ（MI）</div>
-        <ul>
-          <li>Inforの専門コンサルティングおよびデリバリー（M3、LN、LSP、Factory Track、Mobility Core、ExStream）。</li>
-          <li>Inforノード基盤の構築・運用：HyperV、Windows Server、ADFS、LDAP、SSL証明書、API、VPN、SQL、Java。</li>
-          <li>データ移行、製品アップグレード、インダストリー4.0プロジェクトのネットワークコンサルティング。</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">2021年2月 — 2023年7月</div>
-        <div class="tl-role">IT Manager — ITインフラ・統合責任者</div>
-        <div class="tl-company">Caimi Brevetti S.p.A. — ノヴァ・ミラネーゼ（MI）</div>
-        <ul>
-          <li>ITインフラ（ハードウェア・ソフトウェア）の全体管理。</li>
-          <li>イノベーションおよびシステム統合プロジェクト、IT予算管理とベンダー対応。</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">2019年1月 — 2021年2月</div>
-        <div class="tl-role">IT System Technician &amp; Functional Analyst</div>
-        <div class="tl-company">New Livit s.r.l. — クサーゴ（MI）</div>
-        <ul>
-          <li>システムおよびネットワーク機器の設置・保守：VPBX、VoIP、LAN、VLAN。</li>
-          <li>VMware、Microsoft 365、Exchange、QNAP/Synology NAS、バックアップ、クラスタリング、ファイアウォール、Ubiquiti UniFi、Active Directory、HA、ディザスタリカバリ、VPN。</li>
-        </ul>
+      <div class="track track-msp reveal">
+        <div class="track-head"><span class="ic">🚀</span> 独立コンサルタント &amp; MSP</div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-period">2020年6月 — 現在</div>
+            <div class="tl-role">サイバーセキュリティ &amp; 産業オートメーション サービス<span class="badge-now">現在</span></div>
+            <div class="tl-company">MSP · 独立業務</div>
+            <ul>
+              <li>企業向けのマネージドサイバーセキュリティサービス（MSP）の提供。</li>
+              <li>産業オートメーションのプロジェクトおよび生産システムの統合。</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">2019年9月 — 現在</div>
+            <div class="tl-role">IT Consultant — InforOS システム統合</div>
+            <div class="tl-company">Metroz Essences S.p.A. — コロニョ・モンツェーゼ（MI）</div>
+            <ul>
+              <li>Inforインフラの運用と生産プロセスの自動化（Infor OS、ION、IDM、Mingle、LX、BODs）。</li>
+              <li>Ephesoftを用いたドキュメント自動化とOCR開発。</li>
+              <li>生産システム（PLC、産業用計量器）の統合。</li>
+              <li>ネットワーク：Fortinet、VLAN、ネットワーク分離、ディザスタリカバリ、HyperV。</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">2021年2月 — 2023年7月</div>
+            <div class="tl-role">IT Manager — ITインフラ・統合責任者</div>
+            <div class="tl-company">Caimi Brevetti S.p.A. — ノヴァ・ミラネーゼ（MI）</div>
+            <ul>
+              <li>ITインフラ（ハードウェア・ソフトウェア）の全体管理。</li>
+              <li>イノベーションおよびシステム統合プロジェクト、IT予算管理とベンダー対応。</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

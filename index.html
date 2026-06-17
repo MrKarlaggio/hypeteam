@@ -138,6 +138,13 @@ section{padding:90px 0}
 .tl-item li{color:var(--muted);font-size:.96rem;padding-left:20px;position:relative}
 .tl-item li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
 .badge-now{display:inline-block;font-size:.7rem;font-weight:700;color:#0b1020;background:var(--accent-2);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.track-head{display:flex;align-items:center;gap:10px;font-size:1.05rem;font-weight:800;margin-bottom:26px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.track-head .ic{font-size:1.35rem}
+.track-msp .timeline::before{background:linear-gradient(var(--accent-2),#7a5cff,transparent)}
+.track-msp .tl-item::before{border-color:var(--accent-2);box-shadow:0 0 0 4px rgba(54,194,255,.12)}
+.track-msp .tl-item li::before{color:var(--accent-2)}
+.track-msp .tl-period{color:var(--accent)}
 
 /* skills */
 .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
@@ -196,6 +203,7 @@ footer .socials a:hover svg{fill:var(--accent)}
 /* responsive */
 @media(max-width:880px){
   .about-grid,.skills-grid,.proj-grid{grid-template-columns:1fr}
+  .tracks{grid-template-columns:1fr;gap:36px}
   .cert-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:680px){
@@ -281,67 +289,86 @@ footer .socials a:hover svg{fill:var(--accent)}
     <div class="sec-head reveal">
       <span class="sec-tag">// percorso</span>
       <h2>Esperienza professionale</h2>
-      <p>Dal supporto sistemistico alla consulenza Cybersecurity di alto livello.</p>
+      <p>Due percorsi paralleli: la crescita come dipendente e l'attività indipendente come consulente e MSP.</p>
     </div>
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-period">Mag 2026 — Presente</div>
-        <div class="tl-role">Offering Developer &amp; Cybersecurity Consultant (CDE-PAM)<span class="badge-now">ora</span></div>
-        <div class="tl-company">Exprivia S.p.A.</div>
-        <ul>
-          <li>Sviluppo e definizione di offering di servizi in ambito Cybersecurity e Privileged Access Management.</li>
-          <li>Delivery e consulenza CyberArk PAM a livello CDE-PAM.</li>
-        </ul>
+    <div class="tracks">
+      <div class="track reveal">
+        <div class="track-head"><span class="ic">🏢</span> Percorso da dipendente</div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-period">Mag 2026 — Presente</div>
+            <div class="tl-role">Offering Developer &amp; Cybersecurity Consultant (CDE-PAM)<span class="badge-now">ora</span></div>
+            <div class="tl-company">Exprivia S.p.A.</div>
+            <ul>
+              <li>Sviluppo e definizione di offering di servizi in ambito Cybersecurity e Privileged Access Management.</li>
+              <li>Delivery e consulenza CyberArk PAM a livello CDE-PAM.</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">Set 2025 — Mag 2026</div>
+            <div class="tl-role">Cybersecurity Engineer</div>
+            <div class="tl-company">DGS — Sesto San Giovanni (MI)</div>
+            <ul>
+              <li>Deploy e gestione di soluzioni CyberArk PAM (PVWA, CPM, PSM) per la sicurezza degli account privilegiati.</li>
+              <li>Hardening e controlli di compliance secondo gli standard di sicurezza.</li>
+              <li>Troubleshooting CyberArk e root cause analysis.</li>
+              <li>Coordinamento in team misto Delivery &amp; Assurance e supporto tecnico.</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">Mag 2021 — Lug 2025</div>
+            <div class="tl-role">Infor Systems Administrator</div>
+            <div class="tl-company">Horsa S.p.A. — Milano (MI)</div>
+            <ul>
+              <li>Consulenza e delivery specialistica Infor (M3, LN, LSP, Factory Track, Mobility Core, ExStream).</li>
+              <li>Gestione infrastruttura nodi Infor: HyperV, Windows Server, ADFS, LDAP, certificati SSL, API, VPN, SQL, Java.</li>
+              <li>Migrazione dati, aggiornamento prodotti e consulenza di rete per progetti Industry 4.0.</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">Gen 2019 — Feb 2021</div>
+            <div class="tl-role">IT System Technician &amp; Functional Analyst</div>
+            <div class="tl-company">New Livit s.r.l. — Cusago (MI)</div>
+            <ul>
+              <li>Installazione e manutenzione di sistemi e apparati di rete: VPBX, VoIP, LAN, VLAN.</li>
+              <li>VMware, Microsoft 365, Exchange, NAS QNAP/Synology, backup, clustering, firewall, Ubiquiti UniFi, Active Directory, HA, disaster recovery, VPN.</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">Set 2025 — Mag 2026</div>
-        <div class="tl-role">Cybersecurity Engineer</div>
-        <div class="tl-company">DGS — Sesto San Giovanni (MI)</div>
-        <ul>
-          <li>Deploy e gestione di soluzioni CyberArk PAM (PVWA, CPM, PSM) per la sicurezza degli account privilegiati.</li>
-          <li>Hardening e controlli di compliance secondo gli standard di sicurezza.</li>
-          <li>Troubleshooting CyberArk e root cause analysis.</li>
-          <li>Coordinamento in team misto Delivery &amp; Assurance e supporto tecnico.</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">Set 2019 — Presente</div>
-        <div class="tl-role">IT Consultant — InforOS System Integration</div>
-        <div class="tl-company">Metroz Essences S.p.A. — Cologno Monzese (MI)</div>
-        <ul>
-          <li>Gestione infrastruttura Infor e automazione dei processi produttivi (Infor OS, ION, IDM, Mingle, LX, BODs).</li>
-          <li>Document automation e sviluppo OCR con Ephesoft.</li>
-          <li>Integrazione sistemi di produzione (PLC, bilance industriali).</li>
-          <li>Networking: Fortinet, VLAN, segregazione di rete, disaster recovery, HyperV.</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">Mag 2021 — Lug 2025</div>
-        <div class="tl-role">Infor Systems Administrator</div>
-        <div class="tl-company">Horsa S.p.A. — Milano (MI)</div>
-        <ul>
-          <li>Consulenza e delivery specialistica Infor (M3, LN, LSP, Factory Track, Mobility Core, ExStream).</li>
-          <li>Gestione infrastruttura nodi Infor: HyperV, Windows Server, ADFS, LDAP, certificati SSL, API, VPN, SQL, Java.</li>
-          <li>Migrazione dati, aggiornamento prodotti e consulenza di rete per progetti Industry 4.0.</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">Feb 2021 — Lug 2023</div>
-        <div class="tl-role">IT Manager — Head of IT Infrastructure &amp; Integration</div>
-        <div class="tl-company">Caimi Brevetti S.p.A. — Nova Milanese (MI)</div>
-        <ul>
-          <li>Gestione completa dell'infrastruttura IT, hardware e software.</li>
-          <li>Progetti di innovazione e system integration; gestione budget IT e rapporti con i fornitori.</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-period">Gen 2019 — Feb 2021</div>
-        <div class="tl-role">IT System Technician &amp; Functional Analyst</div>
-        <div class="tl-company">New Livit s.r.l. — Cusago (MI)</div>
-        <ul>
-          <li>Installazione e manutenzione di sistemi e apparati di rete: VPBX, VoIP, LAN, VLAN.</li>
-          <li>VMware, Microsoft 365, Exchange, NAS QNAP/Synology, backup, clustering, firewall, Ubiquiti UniFi, Active Directory, HA, disaster recovery, VPN.</li>
-        </ul>
+      <div class="track track-msp reveal">
+        <div class="track-head"><span class="ic">🚀</span> Consulente indipendente &amp; MSP</div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-period">Giu 2020 — Presente</div>
+            <div class="tl-role">Servizi Cybersecurity &amp; Automazione Industriale<span class="badge-now">ora</span></div>
+            <div class="tl-company">MSP · Attività indipendente</div>
+            <ul>
+              <li>Erogazione di servizi gestiti (MSP) di cybersecurity per clienti aziendali.</li>
+              <li>Progetti di automazione industriale e integrazione di sistemi produttivi.</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">Set 2019 — Presente</div>
+            <div class="tl-role">IT Consultant — InforOS System Integration</div>
+            <div class="tl-company">Metroz Essences S.p.A. — Cologno Monzese (MI)</div>
+            <ul>
+              <li>Gestione infrastruttura Infor e automazione dei processi produttivi (Infor OS, ION, IDM, Mingle, LX, BODs).</li>
+              <li>Document automation e sviluppo OCR con Ephesoft.</li>
+              <li>Integrazione sistemi di produzione (PLC, bilance industriali).</li>
+              <li>Networking: Fortinet, VLAN, segregazione di rete, disaster recovery, HyperV.</li>
+            </ul>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-period">Feb 2021 — Lug 2023</div>
+            <div class="tl-role">IT Manager — Head of IT Infrastructure &amp; Integration</div>
+            <div class="tl-company">Caimi Brevetti S.p.A. — Nova Milanese (MI)</div>
+            <ul>
+              <li>Gestione completa dell'infrastruttura IT, hardware e software.</li>
+              <li>Progetti di innovazione e system integration; gestione budget IT e rapporti con i fornitori.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
