@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elio Meriggi — ICT Manager &amp; CyberArk Consultant</title>
-<meta name="description" content="Elio Meriggi — ICT Manager e consulente Cybersecurity specializzato in CyberArk Privileged Access Management (CDE-PAM). Infrastrutture IT, system integration Infor e progetti Industry 4.0.">
+<title>エリオ・メリッジ — ICTマネージャー &amp; CyberArkコンサルタント</title>
+<meta name="description" content="エリオ・メリッジ — CyberArk特権アクセス管理（CDE-PAM）を専門とするICTマネージャー兼サイバーセキュリティコンサルタント。ITインフラ、Inforシステム統合、インダストリー4.0プロジェクト。">
 <meta name="author" content="Elio Meriggi">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Elio Meriggi — ICT Manager &amp; CyberArk Consultant">
-<meta property="og:description" content="Specialista Cybersecurity e Privileged Access Management (CyberArk CDE-PAM). Infrastrutture IT, system integration e progetti personali.">
-<meta property="og:url" content="https://hypeteam.it/">
+<meta property="og:title" content="エリオ・メリッジ — ICTマネージャー &amp; CyberArkコンサルタント">
+<meta property="og:description" content="サイバーセキュリティおよび特権アクセス管理のスペシャリスト（CyberArk CDE-PAM）。ITインフラ、システム統合、個人プロジェクト。">
+<meta property="og:url" content="https://hypeteam.it/ja/">
 
 <!-- hreflang -->
 <link rel="alternate" hreflang="it" href="https://hypeteam.it/">
@@ -21,7 +21,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -42,10 +42,10 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{
-  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-family:'Inter','Noto Sans JP',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.65;
+  line-height:1.8;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
@@ -66,7 +66,7 @@ header.nav.scrolled{border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{font-weight:800;letter-spacing:-.02em;font-size:1.1rem;display:flex;align-items:center;gap:10px}
 .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--accent-grad);box-shadow:0 0 14px var(--accent)}
-.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links{display:flex;gap:26px;align-items:center}
 .nav-links a{color:var(--muted);font-weight:500;font-size:.95rem;transition:color .2s}
 .nav-links a:hover{color:var(--text)}
 .nav-cta{padding:9px 18px;border-radius:999px;background:var(--accent-grad);color:#fff;font-weight:600;font-size:.9rem;box-shadow:0 8px 24px rgba(255,106,61,.3)}
@@ -87,15 +87,15 @@ header.nav.scrolled{border-bottom:1px solid var(--line)}
   content:"";position:absolute;bottom:-150px;left:-120px;width:480px;height:480px;
   background:radial-gradient(circle,rgba(54,194,255,.16),transparent 65%);filter:blur(20px);
 }
-.hero-inner{position:relative;z-index:2;max-width:780px}
+.hero-inner{position:relative;z-index:2;max-width:820px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--accent-2);
   background:rgba(54,194,255,.1);border:1px solid rgba(54,194,255,.25);padding:6px 14px;border-radius:999px;margin-bottom:24px}
 .eyebrow .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 0 rgba(54,194,255,.7);animation:pulse 2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(54,194,255,.6)}70%{box-shadow:0 0 0 10px rgba(54,194,255,0)}100%{box-shadow:0 0 0 0 rgba(54,194,255,0)}}
-.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin-bottom:18px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.25;letter-spacing:-.02em;font-weight:800;margin-bottom:18px}
 .hero h1 .grad{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero .role{font-size:clamp(1.05rem,2.5vw,1.4rem);color:var(--muted);font-weight:500;margin-bottom:26px}
-.hero p.lead{font-size:1.08rem;color:var(--muted);max-width:640px;margin-bottom:36px}
+.hero .role{font-size:clamp(1.05rem,2.5vw,1.35rem);color:var(--muted);font-weight:500;margin-bottom:26px}
+.hero p.lead{font-size:1.05rem;color:var(--muted);max-width:680px;margin-bottom:36px}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 .btn{padding:13px 26px;border-radius:12px;font-weight:600;font-size:.98rem;display:inline-flex;align-items:center;gap:9px;transition:transform .2s,box-shadow .2s}
 .btn-primary{background:var(--accent-grad);color:#fff;box-shadow:0 12px 30px rgba(255,106,61,.32)}
@@ -109,19 +109,19 @@ header.nav.scrolled{border-bottom:1px solid var(--line)}
 
 /* ---------- SECTIONS ---------- */
 section{padding:90px 0}
-.sec-head{margin-bottom:48px;max-width:640px}
+.sec-head{margin-bottom:48px;max-width:680px}
 .sec-tag{font-family:'JetBrains Mono',monospace;color:var(--accent);font-size:.85rem;font-weight:500;letter-spacing:.05em;margin-bottom:12px;display:block}
-.sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em;font-weight:800;line-height:1.1}
-.sec-head p{color:var(--muted);margin-top:14px;font-size:1.05rem}
+.sec-head h2{font-size:clamp(1.7rem,4vw,2.4rem);letter-spacing:-.01em;font-weight:800;line-height:1.25}
+.sec-head p{color:var(--muted);margin-top:14px;font-size:1.02rem}
 
 /* about */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .about-text p{color:var(--muted);margin-bottom:18px}
-.about-text strong{color:var(--text);font-weight:600}
+.about-text strong{color:var(--text);font-weight:700}
 .facts{display:grid;gap:14px}
 .fact{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
 .fact .ic{font-size:1.3rem;line-height:1}
-.fact .k{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.fact .k{font-size:.78rem;color:var(--muted);letter-spacing:.04em}
 .fact .v{font-weight:600}
 
 /* timeline */
@@ -132,10 +132,10 @@ section{padding:90px 0}
 .tl-item::before{content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:50%;
   background:var(--bg);border:3px solid var(--accent);box-shadow:0 0 0 4px rgba(255,106,61,.12)}
 .tl-period{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--accent-2);margin-bottom:4px}
-.tl-role{font-size:1.15rem;font-weight:700}
+.tl-role{font-size:1.12rem;font-weight:700}
 .tl-company{color:var(--muted);font-weight:500;margin-bottom:10px}
 .tl-item ul{list-style:none;display:grid;gap:6px}
-.tl-item li{color:var(--muted);font-size:.96rem;padding-left:20px;position:relative}
+.tl-item li{color:var(--muted);font-size:.95rem;padding-left:20px;position:relative}
 .tl-item li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
 .badge-now{display:inline-block;font-size:.7rem;font-weight:700;color:#0b1020;background:var(--accent-2);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
 
@@ -177,8 +177,8 @@ section{padding:90px 0}
 /* contact */
 .contact{background:linear-gradient(135deg,var(--card) 0%,var(--card-2) 100%);border:1px solid var(--line);border-radius:24px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}
 .contact::before{content:"";position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:radial-gradient(circle,rgba(255,106,61,.2),transparent 65%)}
-.contact h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;letter-spacing:-.02em;position:relative}
-.contact p{color:var(--muted);margin:14px auto 30px;max-width:480px;position:relative}
+.contact h2{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800;letter-spacing:-.01em;position:relative;line-height:1.3}
+.contact p{color:var(--muted);margin:14px auto 30px;max-width:520px;position:relative}
 .contact-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
 
 /* footer */
@@ -216,38 +216,38 @@ footer .socials a:hover svg{fill:var(--accent)}
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="brand"><span class="dot"></span> Elio Meriggi</a>
+    <a href="#top" class="brand"><span class="dot"></span> エリオ・メリッジ</a>
     <nav class="nav-links" id="navLinks">
-      <a href="#about">Profilo</a>
-      <a href="#experience">Esperienza</a>
-      <a href="#skills">Competenze</a>
-      <a href="#projects">Progetti</a>
-      <a href="#contact" class="nav-cta">Contattami</a>
+      <a href="#about">プロフィール</a>
+      <a href="#experience">経歴</a>
+      <a href="#skills">スキル</a>
+      <a href="#projects">プロジェクト</a>
+      <a href="#contact" class="nav-cta">お問い合わせ</a>
     </nav>
     <div class="lang-switch">
-      <a href="/" class="active">IT</a>
-      <a href="en/">EN</a>
-      <a href="ja/">日本語</a>
+      <a href="../">IT</a>
+      <a href="../en/">EN</a>
+      <a href="../ja/" class="active">日本語</a>
     </div>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" aria-label="メニュー"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap hero-inner">
-    <span class="eyebrow"><span class="pulse"></span> Disponibile per nuove sfide · anche all'estero</span>
-    <h1>Cybersecurity, infrastrutture e <span class="grad">accessi privilegiati</span> sotto controllo.</h1>
-    <p class="role">ICT Manager · CyberArk Consultant (CDE-PAM)</p>
-    <p class="lead">Specialista in Cybersecurity e Privileged Access Management con esperienza pluriennale nella gestione di infrastrutture IT, system integration Infor e progetti Industry 4.0. Trasformo ambienti complessi in sistemi sicuri, affidabili e governabili.</p>
+    <span class="eyebrow"><span class="pulse"></span> 新しい挑戦を歓迎します・海外勤務も可能</span>
+    <h1>サイバーセキュリティ、インフラ、そして<span class="grad">特権アクセス</span>を確実に管理。</h1>
+    <p class="role">ICTマネージャー · CyberArkコンサルタント（CDE-PAM）</p>
+    <p class="lead">ITインフラの運用、Inforシステム統合、インダストリー4.0プロジェクトにおいて長年の経験を持つ、サイバーセキュリティおよび特権アクセス管理のスペシャリストです。複雑な環境を、安全で信頼性が高く、統制可能なシステムへと変えていきます。</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Mettiamoci in contatto →</a>
-      <a href="#projects" class="btn btn-ghost">Vedi i progetti</a>
+      <a href="#contact" class="btn btn-primary">お問い合わせはこちら →</a>
+      <a href="#projects" class="btn btn-ghost">プロジェクトを見る</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="num">7+</div><div class="lbl">anni di esperienza IT</div></div>
-      <div class="stat"><div class="num">3×</div><div class="lbl">certificazioni CyberArk</div></div>
-      <div class="stat"><div class="num">5+</div><div class="lbl">progetti personali</div></div>
+      <div class="stat"><div class="num">7+</div><div class="lbl">年のIT経験</div></div>
+      <div class="stat"><div class="num">3×</div><div class="lbl">CyberArk認定資格</div></div>
+      <div class="stat"><div class="num">5+</div><div class="lbl">個人プロジェクト</div></div>
     </div>
   </div>
 </section>
@@ -256,20 +256,20 @@ footer .socials a:hover svg{fill:var(--accent)}
 <section id="about">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="sec-tag">// chi sono</span>
-      <h2>Profilo</h2>
+      <span class="sec-tag">// about</span>
+      <h2>プロフィール</h2>
     </div>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>Sono uno <strong>specialista Cybersecurity e Privileged Access Management</strong>, certificato CyberArk <strong>CDE-PAM, PAM-DEF e PAM-SEN</strong>. Mi occupo di delivery e consulenza su soluzioni CyberArk (PVWA, CPM, PSM), hardening e compliance per la sicurezza degli account privilegiati.</p>
-        <p>Ho un solido <strong>background sistemistico</strong> — reti, virtualizzazione, identity e sicurezza — costruito in anni di gestione di infrastrutture IT e progetti di <strong>system integration Infor</strong> e <strong>Industry 4.0</strong>.</p>
-        <p>Curioso e pratico per natura: nel tempo libero sviluppo app mobile, automazioni e bot. Italiano madrelingua, inglese B2, in apprendimento del giapponese 🇯🇵 — e disponibile a trasferimenti anche internazionali.</p>
+        <p>私は<strong>サイバーセキュリティおよび特権アクセス管理のスペシャリスト</strong>で、CyberArk <strong>CDE-PAM、PAM-DEF、PAM-SEN</strong> を取得しています。CyberArkソリューション（PVWA、CPM、PSM）のデリバリーとコンサルティング、特権アカウントのセキュリティに関するハードニングとコンプライアンスを担当しています。</p>
+        <p>ネットワーク、仮想化、アイデンティティ、セキュリティといった<strong>堅固なシステム基盤</strong>の知識を、ITインフラの運用や<strong>Inforシステム統合</strong>、<strong>インダストリー4.0</strong>プロジェクトを通じて長年培ってきました。</p>
+        <p>好奇心旺盛で実践を重んじる性格で、余暇にはモバイルアプリや自動化ツール、ボットを開発しています。母語はイタリア語、英語はB2、現在は日本語を学習中です 🇯🇵。海外を含む転勤にも対応可能です。</p>
       </div>
       <div class="facts reveal">
-        <div class="fact"><span class="ic">📍</span><div><div class="k">Sede</div><div class="v">Milano, Italia</div></div></div>
-        <div class="fact"><span class="ic">🛡️</span><div><div class="k">Focus</div><div class="v">CyberArk PAM · Cybersecurity</div></div></div>
-        <div class="fact"><span class="ic">🏢</span><div><div class="k">Ruolo attuale</div><div class="v">Offering Developer &amp; Cybersecurity Consultant — Exprivia</div></div></div>
-        <div class="fact"><span class="ic">✈️</span><div><div class="k">Mobilità</div><div class="v">Disponibile a trasferimenti internazionali</div></div></div>
+        <div class="fact"><span class="ic">📍</span><div><div class="k">所在地</div><div class="v">イタリア・ミラノ</div></div></div>
+        <div class="fact"><span class="ic">🛡️</span><div><div class="k">専門分野</div><div class="v">CyberArk PAM · サイバーセキュリティ</div></div></div>
+        <div class="fact"><span class="ic">🏢</span><div><div class="k">現職</div><div class="v">Offering Developer &amp; Cybersecurity Consultant — Exprivia</div></div></div>
+        <div class="fact"><span class="ic">✈️</span><div><div class="k">勤務地</div><div class="v">海外転勤も可能</div></div></div>
       </div>
     </div>
   </div>
@@ -279,68 +279,68 @@ footer .socials a:hover svg{fill:var(--accent)}
 <section id="experience">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="sec-tag">// percorso</span>
-      <h2>Esperienza professionale</h2>
-      <p>Dal supporto sistemistico alla consulenza Cybersecurity di alto livello.</p>
+      <span class="sec-tag">// career</span>
+      <h2>職務経歴</h2>
+      <p>システムサポートから高度なサイバーセキュリティコンサルティングまで。</p>
     </div>
     <div class="timeline">
       <div class="tl-item reveal">
-        <div class="tl-period">Mag 2026 — Presente</div>
-        <div class="tl-role">Offering Developer &amp; Cybersecurity Consultant (CDE-PAM)<span class="badge-now">ora</span></div>
+        <div class="tl-period">2026年5月 — 現在</div>
+        <div class="tl-role">Offering Developer &amp; Cybersecurity Consultant（CDE-PAM）<span class="badge-now">現在</span></div>
         <div class="tl-company">Exprivia S.p.A.</div>
         <ul>
-          <li>Sviluppo e definizione di offering di servizi in ambito Cybersecurity e Privileged Access Management.</li>
-          <li>Delivery e consulenza CyberArk PAM a livello CDE-PAM.</li>
+          <li>サイバーセキュリティおよび特権アクセス管理分野におけるサービスオファリングの開発・策定。</li>
+          <li>CDE-PAMレベルでのCyberArk PAMのデリバリーおよびコンサルティング。</li>
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-period">Set 2025 — Mag 2026</div>
+        <div class="tl-period">2025年9月 — 2026年5月</div>
         <div class="tl-role">Cybersecurity Engineer</div>
-        <div class="tl-company">DGS — Sesto San Giovanni (MI)</div>
+        <div class="tl-company">DGS — セスト・サン・ジョヴァンニ（MI）</div>
         <ul>
-          <li>Deploy e gestione di soluzioni CyberArk PAM (PVWA, CPM, PSM) per la sicurezza degli account privilegiati.</li>
-          <li>Hardening e controlli di compliance secondo gli standard di sicurezza.</li>
-          <li>Troubleshooting CyberArk e root cause analysis.</li>
-          <li>Coordinamento in team misto Delivery &amp; Assurance e supporto tecnico.</li>
+          <li>特権アカウントのセキュリティを目的としたCyberArk PAMソリューション（PVWA、CPM、PSM）の導入と運用。</li>
+          <li>セキュリティ基準に準拠したハードニングおよびコンプライアンス対応。</li>
+          <li>CyberArkのトラブルシューティングと根本原因分析。</li>
+          <li>DeliveryとAssuranceの混成チームでの調整および技術サポート。</li>
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-period">Set 2019 — Presente</div>
-        <div class="tl-role">IT Consultant — InforOS System Integration</div>
-        <div class="tl-company">Metroz Essences S.p.A. — Cologno Monzese (MI)</div>
+        <div class="tl-period">2019年9月 — 現在</div>
+        <div class="tl-role">IT Consultant — InforOS システム統合</div>
+        <div class="tl-company">Metroz Essences S.p.A. — コロニョ・モンツェーゼ（MI）</div>
         <ul>
-          <li>Gestione infrastruttura Infor e automazione dei processi produttivi (Infor OS, ION, IDM, Mingle, LX, BODs).</li>
-          <li>Document automation e sviluppo OCR con Ephesoft.</li>
-          <li>Integrazione sistemi di produzione (PLC, bilance industriali).</li>
-          <li>Networking: Fortinet, VLAN, segregazione di rete, disaster recovery, HyperV.</li>
+          <li>Inforインフラの運用と生産プロセスの自動化（Infor OS、ION、IDM、Mingle、LX、BODs）。</li>
+          <li>Ephesoftを用いたドキュメント自動化とOCR開発。</li>
+          <li>生産システム（PLC、産業用計量器）の統合。</li>
+          <li>ネットワーク：Fortinet、VLAN、ネットワーク分離、ディザスタリカバリ、HyperV。</li>
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-period">Mag 2021 — Lug 2025</div>
+        <div class="tl-period">2021年5月 — 2025年7月</div>
         <div class="tl-role">Infor Systems Administrator</div>
-        <div class="tl-company">Horsa S.p.A. — Milano (MI)</div>
+        <div class="tl-company">Horsa S.p.A. — ミラノ（MI）</div>
         <ul>
-          <li>Consulenza e delivery specialistica Infor (M3, LN, LSP, Factory Track, Mobility Core, ExStream).</li>
-          <li>Gestione infrastruttura nodi Infor: HyperV, Windows Server, ADFS, LDAP, certificati SSL, API, VPN, SQL, Java.</li>
-          <li>Migrazione dati, aggiornamento prodotti e consulenza di rete per progetti Industry 4.0.</li>
+          <li>Inforの専門コンサルティングおよびデリバリー（M3、LN、LSP、Factory Track、Mobility Core、ExStream）。</li>
+          <li>Inforノード基盤の構築・運用：HyperV、Windows Server、ADFS、LDAP、SSL証明書、API、VPN、SQL、Java。</li>
+          <li>データ移行、製品アップグレード、インダストリー4.0プロジェクトのネットワークコンサルティング。</li>
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-period">Feb 2021 — Lug 2023</div>
-        <div class="tl-role">IT Manager — Head of IT Infrastructure &amp; Integration</div>
-        <div class="tl-company">Caimi Brevetti S.p.A. — Nova Milanese (MI)</div>
+        <div class="tl-period">2021年2月 — 2023年7月</div>
+        <div class="tl-role">IT Manager — ITインフラ・統合責任者</div>
+        <div class="tl-company">Caimi Brevetti S.p.A. — ノヴァ・ミラネーゼ（MI）</div>
         <ul>
-          <li>Gestione completa dell'infrastruttura IT, hardware e software.</li>
-          <li>Progetti di innovazione e system integration; gestione budget IT e rapporti con i fornitori.</li>
+          <li>ITインフラ（ハードウェア・ソフトウェア）の全体管理。</li>
+          <li>イノベーションおよびシステム統合プロジェクト、IT予算管理とベンダー対応。</li>
         </ul>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-period">Gen 2019 — Feb 2021</div>
+        <div class="tl-period">2019年1月 — 2021年2月</div>
         <div class="tl-role">IT System Technician &amp; Functional Analyst</div>
-        <div class="tl-company">New Livit s.r.l. — Cusago (MI)</div>
+        <div class="tl-company">New Livit s.r.l. — クサーゴ（MI）</div>
         <ul>
-          <li>Installazione e manutenzione di sistemi e apparati di rete: VPBX, VoIP, LAN, VLAN.</li>
-          <li>VMware, Microsoft 365, Exchange, NAS QNAP/Synology, backup, clustering, firewall, Ubiquiti UniFi, Active Directory, HA, disaster recovery, VPN.</li>
+          <li>システムおよびネットワーク機器の設置・保守：VPBX、VoIP、LAN、VLAN。</li>
+          <li>VMware、Microsoft 365、Exchange、QNAP/Synology NAS、バックアップ、クラスタリング、ファイアウォール、Ubiquiti UniFi、Active Directory、HA、ディザスタリカバリ、VPN。</li>
         </ul>
       </div>
     </div>
@@ -352,34 +352,34 @@ footer .socials a:hover svg{fill:var(--accent)}
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="sec-tag">// stack</span>
-      <h2>Competenze tecniche</h2>
+      <h2>技術スキル</h2>
     </div>
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <h3><span class="ic">🛡️</span> PAM &amp; Security</h3>
+        <h3><span class="ic">🛡️</span> PAM &amp; セキュリティ</h3>
         <div class="chips">
           <span class="chip">CyberArk PVWA</span><span class="chip">CPM</span><span class="chip">PSM</span>
-          <span class="chip">Hardening</span><span class="chip">Compliance</span><span class="chip">Root Cause Analysis</span>
+          <span class="chip">ハードニング</span><span class="chip">コンプライアンス</span><span class="chip">根本原因分析</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <h3><span class="ic">🖥️</span> Infrastruttura &amp; Sistemistica</h3>
+        <h3><span class="ic">🖥️</span> インフラ &amp; システム</h3>
         <div class="chips">
           <span class="chip">Windows Server</span><span class="chip">HyperV</span><span class="chip">VMware</span>
           <span class="chip">Active Directory</span><span class="chip">ADFS</span><span class="chip">LDAP</span>
-          <span class="chip">SSL / Identity</span><span class="chip">Clustering / HA</span><span class="chip">Disaster Recovery</span>
+          <span class="chip">SSL / Identity</span><span class="chip">クラスタリング / HA</span><span class="chip">ディザスタリカバリ</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <h3><span class="ic">🌐</span> Networking</h3>
+        <h3><span class="ic">🌐</span> ネットワーク</h3>
         <div class="chips">
           <span class="chip">Fortinet</span><span class="chip">Ubiquiti UniFi</span><span class="chip">Aruba</span>
-          <span class="chip">VLAN</span><span class="chip">Segregazione di rete</span><span class="chip">Firewall</span>
+          <span class="chip">VLAN</span><span class="chip">ネットワーク分離</span><span class="chip">ファイアウォール</span>
           <span class="chip">VPN</span><span class="chip">VPBX / VoIP</span>
         </div>
       </div>
       <div class="skill-card reveal">
-        <h3><span class="ic">🔗</span> Infor &amp; Integration</h3>
+        <h3><span class="ic">🔗</span> Infor &amp; 統合</h3>
         <div class="chips">
           <span class="chip">Infor OS</span><span class="chip">ION</span><span class="chip">IDM</span>
           <span class="chip">M3 / LN / LX</span><span class="chip">Factory Track</span><span class="chip">Mingle</span>
@@ -394,16 +394,16 @@ footer .socials a:hover svg{fill:var(--accent)}
 <section id="certifications">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="sec-tag">// credenziali</span>
-      <h2>Certificazioni</h2>
+      <span class="sec-tag">// credentials</span>
+      <h2>認定資格</h2>
     </div>
     <div class="cert-grid">
       <div class="cert reveal"><span class="shield">🏅</span><div><div class="name">CyberArk CDE-PAM</div><div class="sub">Certified Delivery Engineer</div></div></div>
       <div class="cert reveal"><span class="shield">🏅</span><div><div class="name">CyberArk PAM-DEF</div><div class="sub">Defender</div></div></div>
       <div class="cert reveal"><span class="shield">🏅</span><div><div class="name">CyberArk PAM-SEN</div><div class="sub">Sentry</div></div></div>
-      <div class="cert reveal"><span class="shield">🎯</span><div><div class="name">CompTIA Security+</div><div class="sub">In conseguimento</div></div></div>
-      <div class="cert reveal"><span class="shield">🎯</span><div><div class="name">CyberArk CDE-CPC</div><div class="sub">In conseguimento</div></div></div>
-      <div class="cert reveal"><span class="shield">📜</span><div><div class="name">ECDL · EBCL · TOEIC</div><div class="sub">Digital · Economic · Inglese B2</div></div></div>
+      <div class="cert reveal"><span class="shield">🎯</span><div><div class="name">CompTIA Security+</div><div class="sub">取得予定</div></div></div>
+      <div class="cert reveal"><span class="shield">🎯</span><div><div class="name">CyberArk CDE-CPC</div><div class="sub">取得予定</div></div></div>
+      <div class="cert reveal"><span class="shield">📜</span><div><div class="name">ECDL · EBCL · TOEIC</div><div class="sub">デジタル · 経済 · 英語B2</div></div></div>
     </div>
   </div>
 </section>
@@ -413,33 +413,33 @@ footer .socials a:hover svg{fill:var(--accent)}
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="sec-tag">// side projects</span>
-      <h2>Progetti personali</h2>
-      <p>Quando non metto in sicurezza infrastrutture, costruisco app, automazioni e bot. Ecco una selezione.</p>
+      <h2>個人プロジェクト</h2>
+      <p>インフラのセキュリティ業務以外の時間には、アプリや自動化ツール、ボットを開発しています。その一部をご紹介します。</p>
     </div>
     <div class="proj-grid">
       <div class="proj reveal">
         <div class="proj-emoji">🍺</div>
         <h3>Stappa Birra</h3>
-        <p>App mobile dedicata al mondo delle birre — progetto del team HypeTeam. Catalogo, schede e community per appassionati.</p>
-        <div class="tags"><span>Flutter</span><span>Dart</span><span>Mobile</span></div>
+        <p>ビールの世界に特化したモバイルアプリ — HypeTeamのプロジェクト。愛好家向けのカタログ、テイスティング情報、コミュニティ機能を備えています。</p>
+        <div class="tags"><span>Flutter</span><span>Dart</span><span>モバイル</span></div>
       </div>
       <div class="proj reveal">
         <div class="proj-emoji">✈️</div>
         <h3>Dora Travels</h3>
-        <p>App Flutter per organizzare e raccontare i viaggi. Distribuita su iOS tramite TestFlight con pipeline CI/CD su Codemagic.</p>
+        <p>旅行を計画・記録するためのFlutterアプリ。Codemagic上のCI/CDパイプラインを用い、TestFlight経由でiOSに配信。</p>
         <div class="tags"><span>Flutter</span><span>iOS / TestFlight</span><span>Codemagic</span></div>
       </div>
       <div class="proj reveal">
         <div class="proj-emoji">💞</div>
         <h3>Tinder-ACT</h3>
-        <p>App di matching pensata per la community Rotaract. Backend Firebase, navigazione con go_router, autenticazione e profili.</p>
+        <p>Rotaractコミュニティ向けのマッチングアプリ。Firebaseバックエンド、go_routerによるナビゲーション、認証とプロフィール機能を実装。</p>
         <div class="tags"><span>Flutter</span><span>Firebase</span><span>go_router</span></div>
       </div>
       <div class="proj reveal">
         <div class="proj-emoji">🤖</div>
         <h3>Trading Bot</h3>
-        <p>Bot di trading automatico per mercati crypto, con logica di esecuzione e gestione del rischio. Automazione e integrazione API.</p>
-        <div class="tags"><span>Python</span><span>API</span><span>Automazione</span></div>
+        <p>仮想通貨市場向けの自動取引ボット。執行ロジックとリスク管理を備える。自動化とAPI統合。</p>
+        <div class="tags"><span>Python</span><span>API</span><span>自動化</span></div>
       </div>
     </div>
   </div>
@@ -449,14 +449,14 @@ footer .socials a:hover svg{fill:var(--accent)}
 <section id="languages">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="sec-tag">// lingue</span>
-      <h2>Lingue</h2>
+      <span class="sec-tag">// languages</span>
+      <h2>言語</h2>
     </div>
     <div class="lang-row">
-      <div class="lang reveal"><span class="flag">🇮🇹</span><div><div class="name">Italiano</div><div class="lvl">Madrelingua</div></div></div>
-      <div class="lang reveal"><span class="flag">🇬🇧</span><div><div class="name">Inglese</div><div class="lvl">B2 · TOEIC</div></div></div>
-      <div class="lang reveal"><span class="flag">🇪🇸</span><div><div class="name">Spagnolo</div><div class="lvl">Base</div></div></div>
-      <div class="lang reveal"><span class="flag">🇯🇵</span><div><div class="name">Giapponese</div><div class="lvl">In apprendimento</div></div></div>
+      <div class="lang reveal"><span class="flag">🇮🇹</span><div><div class="name">イタリア語</div><div class="lvl">母語</div></div></div>
+      <div class="lang reveal"><span class="flag">🇬🇧</span><div><div class="name">英語</div><div class="lvl">B2 · TOEIC</div></div></div>
+      <div class="lang reveal"><span class="flag">🇪🇸</span><div><div class="name">スペイン語</div><div class="lvl">初級</div></div></div>
+      <div class="lang reveal"><span class="flag">🇯🇵</span><div><div class="name">日本語</div><div class="lvl">学習中</div></div></div>
     </div>
   </div>
 </section>
@@ -465,8 +465,8 @@ footer .socials a:hover svg{fill:var(--accent)}
 <section id="contact">
   <div class="wrap">
     <div class="contact reveal">
-      <h2>Parliamo del prossimo progetto</h2>
-      <p>Aperto a opportunità in Cybersecurity, PAM e infrastrutture IT — in Italia e all'estero. Scrivimi: rispondo volentieri.</p>
+      <h2>次のプロジェクトについてお話ししましょう</h2>
+      <p>サイバーセキュリティ、PAM、ITインフラ分野の機会を、イタリア国内・海外を問わず歓迎します。お気軽にご連絡ください。</p>
       <div class="contact-actions">
         <a href="mailto:elio.meriggi@gmail.com" class="btn btn-primary">✉️ elio.meriggi@gmail.com</a>
         <a href="tel:+393311089952" class="btn btn-ghost">📞 +39 331 108 99 52</a>
@@ -479,32 +479,25 @@ footer .socials a:hover svg{fill:var(--accent)}
 <footer>
   <div class="wrap">
     <div class="socials">
-      <a href="mailto:elio.meriggi@gmail.com" aria-label="Email" title="Email">
+      <a href="mailto:elio.meriggi@gmail.com" aria-label="メール" title="メール">
         <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
       </a>
-      <a href="#" aria-label="LinkedIn" title="LinkedIn (da aggiungere)">
+      <a href="#" aria-label="LinkedIn" title="LinkedIn（追加予定）">
         <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V9.96H5.56v8.38zM6.95 8.72a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24m11.39 9.62v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.4 1.32v-1.1H10.1v8.38h2.78v-4.42c0-1.17.22-2.3 1.67-2.3 1.43 0 1.45 1.34 1.45 2.38v4.34z"/></svg>
       </a>
     </div>
-    <p>© <span id="year"></span> Elio Meriggi · hypeteam.it · Realizzato con cura ✨</p>
+    <p>© <span id="year"></span> Elio Meriggi · hypeteam.it · 心を込めて制作 ✨</p>
   </div>
 </footer>
 
 <script>
-  // year
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  // nav scroll state
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 20));
-
-  // mobile menu
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => navLinks.classList.toggle('open'));
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
-  // reveal on scroll
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   }, { threshold: 0.12 });
